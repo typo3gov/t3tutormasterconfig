@@ -1,0 +1,7 @@
+#
+# PageTS for TYPO3 Tutor Masterconfig
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_tutor_masterconfig/Configuration/PageTS/RTE.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_tutor_masterconfig/Configuration/PageTS/TCEFORM.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_tutor_masterconfig/Configuration/PageTS/TCEMAIN.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_tutor_masterconfig/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt">

@@ -1,0 +1,58 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:typo3_tutor_masterconfig/Resources/Public/Images/logo.svg
+        fileInverted = EXT:typo3_tutor_masterconfig/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = TYPO3 Tutor Masterconfig
+        linktitle = TYPO3 Tutor Masterconfig
+    }
+    favicon {
+        file = EXT:typo3_tutor_masterconfig/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:typo3_tutor_masterconfig/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:typo3_tutor_masterconfig/Resources/Private/Partials/Page/
+        templateRootPath = EXT:typo3_tutor_masterconfig/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:typo3_tutor_masterconfig/Resources/Private/Layouts/
+        partialRootPath = EXT:typo3_tutor_masterconfig/Resources/Private/Partials/
+        templateRootPath = EXT:typo3_tutor_masterconfig/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:typo3_tutor_masterconfig/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:typo3_tutor_masterconfig/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:typo3_tutor_masterconfig/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+#######################################
+### REMOVE BOOTSTRAP LESS CONSTANTS ###
+#######################################
+plugin.bootstrap_package.settings.less >
+plugin.bootstrap_package.settings.overrideLessVariables >
